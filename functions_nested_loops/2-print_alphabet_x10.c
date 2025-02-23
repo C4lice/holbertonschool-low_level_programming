@@ -2,7 +2,7 @@
 #include "1-alphabet.c"
 /**
  * print_alphabet_x10 - ...
- * 
+ *
  * Return: ...
  */
 void print_alphabet_x10(void)
