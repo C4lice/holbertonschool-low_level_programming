@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * string_toupper - ...
- * @s: string to make CAPS
+ * @s: string pour faire CAPS
  * Return: ...
  */
 char *string_toupper(char *s)
