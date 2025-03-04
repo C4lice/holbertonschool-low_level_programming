@@ -9,28 +9,27 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i, sec_i, length_nee, length, count;
+	int i, j;
 
-	length = _strlen(haystack);
-	length_nee = _strlen(needle);
-	if (*needle == '\0')
-		return (haystack);
-	for (i = 0; i < length ; i++)
+	if (haystack == NULL || needle == NULL)
 	{
-		for (sec_i = 0 ; sec_i < length_nee ; sec_i++)
+		return (NULL);
+	}
+
+	for (i = 0; haystack[i] != '\0'; i++)
+	{
+		for (j = 0; needle[j] != '\0'; j++)
 		{
-			if (haystack[i] == needle[sec_i])
+			if (haystack[i + j] != needle[j])
 			{
-				count++;
 				break;
 			}
 		}
-		if (count == length_nee - 1)
+		if (needle[j] == '\0')
 		{
-			return (&haystack[i - count + 1]);
+			return (haystack + i);
 		}
-		if (haystack[i] == ' ')
-			count = 0;
 	}
-	return ('\0');
+
+	return (NULL);
 }
