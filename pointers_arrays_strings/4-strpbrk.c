@@ -2,7 +2,8 @@
 #include "strlen.c"
 #include <stdio.h>
 /**
- * _strpbrk - regarder dans un tableau pour voir s'il y a un caractère de la liste
+ * _strpbrk - regarder dans un tableau pour voir
+ * s'il y a un caractère dans liste
  * @s: le tableau à consulter
  * @accept: the array of character to look
  *

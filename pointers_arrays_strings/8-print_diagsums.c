@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *print_diagsums - pour calculer la somme des éléments du tableau dans la diagonale
+ * print_diagsums - pour calculer la somme des éléments du tableau
+ * dans la diagonale
  *@a: tableau de caractère
  *@size: longueur du tableau
  *Return: ...

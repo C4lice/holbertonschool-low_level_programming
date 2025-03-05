@@ -2,7 +2,8 @@
 #include "strlen.c"
 #include <stdio.h>
 /**
- * _strstr - regarde dans un tableau pour voir s'il y a une chaîne dans ce tableau
+ * _strstr - regarde dans un tableau pour voir
+ *s'il y a une chaîne dans ce tableau
  * @haystack: le tableau à consulter
  * @needle: la chaîne à rechercher
  * Return: ...

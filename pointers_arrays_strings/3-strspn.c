@@ -2,7 +2,8 @@
 #include "strlen.c"
 #include <stdio.h>
 /**
- * _strspn - Retourne a la longueur de la plus grande chaîne de caractères contenant uniquement
+ * _strspn - Retourne a la longueur la plus grande chaîne de caractères
+ * contenant uniquement
  * * caractères spécifiés dans la liste des caractères acceptés
  * @s: le tableau à consulter
  * @accept: le caractère à accepter
