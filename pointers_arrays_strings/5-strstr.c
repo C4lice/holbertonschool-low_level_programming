@@ -1,38 +1,39 @@
-#include"main.h"
-#include "strlen.c"
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _strstr - look into a array to see if there is a string in this array
- * @haystack: the array to look into
- * @needle: the string to look
+ * _strstr - Locates a substring.
+ * @haystack: The string to be searched.
+ * @needle: The substring to be located.
  *
- * Return: the first occurence of the string
+ * Return: If the substring is located - a pointer to the beginning
+ *                                       of the located substring.
+ *         If the substring is not located - NULL.
  */
+
 char *_strstr(char *haystack, char *needle)
 {
-	int i, sec_i, length_nee, length, count;
+	int index;
 
-	length = _strlen(haystack);
-	length_nee = _strlen(needle);
-	if (*needle == '\0')
+	if (*needle == 0)
 		return (haystack);
-	for (i = 0; i < length ; i++)
+
+	while (*haystack)
 	{
-		for (sec_i = 0 ; sec_i < length_nee ; sec_i++)
+		index = 0;
+
+		if (haystack[index] == needle[index])
 		{
-			if (haystack[i] == needle[sec_i])
-			{
-				count++;
-				break;
-			}
+			do {
+				if (needle[index + 1] == '\0')
+					return (haystack);
+
+				index++;
+
+			} while (haystack[index] == needle[index]);
 		}
-		if (count == length_nee - 1)
-		{
-			return (&haystack[i - count + 1]);
-		}
-		if (haystack[i] == ' ')
-			count = 0;
+
+		haystack++;
 	}
+
 	return ('\0');
 }
