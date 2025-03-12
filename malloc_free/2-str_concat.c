@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * str_concat - pour concaténer deux chaînes de caractères avec allocation dynamique
+ * str_concat - pour concaténer deux chaînes de
+ * caractères avec allocation dynamique
  * @s1: char pour concaténer
  * @s2: char pour concaténer
  * Return: ...

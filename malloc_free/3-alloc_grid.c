@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- ***alloc_grid - pour retourner un tableau bidimensionnel
- *@width: nombre de lignes
- *@height: nombre de colonnes
- *Return: ...
+ * alloc_grid - pour retourner un tableau bidimensionnel
+ * @width: nombre de lignes
+ * @height: nombre de colonnes
+ * Return: ...
  */
 int **alloc_grid(int width, int height)
 {

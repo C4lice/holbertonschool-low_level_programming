@@ -8,17 +8,17 @@
  */
 char *create_array(unsigned int size, char c)
 {
-    unsigned int itteration;
-    char *liste_final;
+	unsigned int itteration;
+	char *liste_final;
 
-    if (size == 0)
-    {
-        return (NULL);
-    }
-    liste_final = malloc(sizeof(char) * size);
-    for (itteration = 0 ; itteration <= size ; itteration++)
-    {
-        liste_final[itteration] = c;
-    }
-    return (liste_final);
+	if (size == 0)
+	{
+		return (NULL);
+	}
+	liste_final = malloc(sizeof(char) * size);
+	for (itteration = 0 ; itteration <= size ; itteration++)
+	{
+		liste_final[itteration] = c;
+	}
+	return (liste_final);
 }
