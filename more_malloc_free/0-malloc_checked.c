@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * malloc_checked - to allocates memory using malloc
- * @b: size of memory allocation
- * Return: pointer to allocate memory
+ * malloc_checked - pour allouer de la mémoire à l'aide de malloc
+ * @b: taille de l'allocation de mémoire
+ * Return: pointeur pour allouer de la mémoire
  */
 void *malloc_checked(unsigned int b)
 {
