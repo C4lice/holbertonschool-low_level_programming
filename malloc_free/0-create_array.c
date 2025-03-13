@@ -9,16 +9,27 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int itteration;
-	char *liste_final;
+	char *ptr;
 
-	if (size == 0)
+	if (size < 2)
 	{
 		return (NULL);
 	}
-	liste_final = malloc(sizeof(char) * size);
-	for (itteration = 0 ; itteration <= size ; itteration++)
+	ptr = malloc(size * sizeof(c));
+	if (ptr == NULL)
 	{
-		liste_final[itteration] = c;
+		return (NULL);
 	}
-	return (liste_final);
+
+	itteration = 0;
+
+	while (itteration < size)
+	{
+		ptr[itteration] = c;
+		itteration++;
+	}
+
+	ptr[itteration] = '\0';
+
+	return (ptr);
 }
