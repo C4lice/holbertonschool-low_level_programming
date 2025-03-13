@@ -1,42 +1,24 @@
-#ifndef _DOG_H
-#define _DOG_H
-
+#ifndef DOG_H
+#define DOG_H
 /**
- * struct dog - struct to reference dogs
- * @name: dog name
- * @age: age of dog
- * @owner: name of owner dog
- *
- * Description: to reference dogs
+ * struct dog - créer le caractère du chien
+ * @name: nom du chien
+ * @age: l'âge du chien
+ * @owner: propriétaire du chien
  */
-
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-} dog_t;
+};
 
-/*
-*init_dog - to update a struct
-*/
+typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
-
-/**
- *print_dog - to print data of struct
- *@d : struct to print data
- */
 void print_dog(struct dog *d);
-
- /**
-  * dog_t *new_dog -to create a new dog
-  */
 dog_t *new_dog(char *name, float age, char *owner);
-
-/**
- *free_dog - to free memory allocate dynamicly
- *d : struct to free data
- *Return: just free data of strut
- */
+char *_strcpy(char *dest, char *src);
+int _strlen(char *s);
 void free_dog(dog_t *d);
+
 #endif
