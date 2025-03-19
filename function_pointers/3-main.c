@@ -1,0 +1,38 @@
+#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/**
+ *main - appeler une fonction dans la structure
+ *@argc: nombre d'arguments
+ *@argv: arguments
+ *Return: 0 en cas de succès
+*/
+int main(int argc, char **argv)
+{
+	int num1;
+	int num2;
+	int result;
+
+	if (argc != 4)
+	{
+		printf("Error01\n");
+		exit(98);
+	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	if (get_op_func(argv[2]) == NULL)
+	{
+		printf("Error02\n");
+		exit(99);
+	}
+	if ((strcmp(argv[2], "%") || strcmp(argv[2], "/")) && num2 == 0)
+	{
+		printf("Error03\n");
+		exit(100);
+	}
+	result = get_op_func(argv[2])(num1, num2);
+	printf("%d\n", result);
+
+	return (0);
+}
