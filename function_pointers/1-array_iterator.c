@@ -2,11 +2,11 @@
 #include "function_pointers.h"
 
 /**
- *array_iterator - iterate an array
- *@array: pointer array
- *@size: size of array
- *@action: call pointer function
- *return: just iterate an array
+ *array_iterator - itération du tableau
+ *@array: tableau de pointeurs
+ *@size: taille du tableau
+ *@action: appeler la fonction de pointeur
+ *return: ...
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
