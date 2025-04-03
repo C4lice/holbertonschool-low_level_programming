@@ -1,5 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H
+#include <stddef.h>
 
 /**
  * struct list_s - singly linked list
@@ -8,7 +9,7 @@
  * @next: points to the next node
  * Description: ...
  */
-typedef struct list_s
+ typedef struct list_s
 {
 	char *str;
 	unsigned int len;
