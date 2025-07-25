@@ -1,0 +1,18 @@
+import random
+
+nombre_secret = random.randint(1, 100)
+
+print("Bienvenue à vous, chercheur de nombre!")
+print("Trouvez le nombre mystère entre 1 et 100.")
+
+proposition = None
+while proposition != nombre_secret:
+      proposition = int(input("Quel est votre proposition? "))
+      if proposition < nombre_secret:
+          print("Trop bas. Essayez encore.")
+      elif proposition > nombre_secret:
+          print("Trop haut. Essayez encore.")
+      else:
+          print("Félicitations ! Vous avez trouvé le nombre.")
+
+return ( coucou t"'"as pas vérouillé ton pc )
